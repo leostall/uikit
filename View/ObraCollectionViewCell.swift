@@ -9,7 +9,7 @@ import UIKit
 
 class ObraCollectionViewCell: UICollectionViewCell {
 
-    // MARK: - Outlets (conectados pelo Storyboard)
+    // MARK: - Outlets (vamos conectar pelo Storyboard)
     @IBOutlet weak var imagemObraImageView: UIImageView!
     @IBOutlet weak var tituloLabel: UILabel!
     @IBOutlet weak var artistaLabel: UILabel!
@@ -34,17 +34,7 @@ class ObraCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Método que recebe a obra e configura a célula
     func configurar(com obra: ObraDeArte) {
-        // Tenta carregar a imagem do Assets; se não existir, usa um SF Symbol como placeholder
-        if let imagem = UIImage(named: obra.imagemNome) {
-            imagemObraImageView.image = imagem
-            imagemObraImageView.contentMode = .scaleAspectFill
-            imagemObraImageView.tintColor = nil
-        } else {
-            imagemObraImageView.image = UIImage(systemName: "photo.artframe")
-            imagemObraImageView.contentMode = .scaleAspectFit
-            imagemObraImageView.tintColor = .systemGray3
-        }
-
+        imagemObraImageView.image = UIImage(named: obra.imagemNome)
         tituloLabel.text = obra.titulo
         artistaLabel.text = obra.artista
     }

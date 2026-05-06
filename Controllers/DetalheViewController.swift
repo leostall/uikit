@@ -31,15 +31,7 @@ class DetalheViewController: UIViewController {
         guard let obra = obra else { return }
 
         title = obra.titulo
-
-        // Tenta carregar a imagem do Assets; se não existir, usa um SF Symbol como placeholder
-        if let imagem = UIImage(named: obra.imagemNome) {
-            imagemImageView.image = imagem
-            imagemImageView.tintColor = nil
-        } else {
-            imagemImageView.image = UIImage(systemName: "photo.artframe")
-            imagemImageView.tintColor = .systemGray3
-        }
+        imagemImageView.image = UIImage(named: obra.imagemNome)
         imagemImageView.contentMode = .scaleAspectFit
         imagemImageView.clipsToBounds = true
 
