@@ -1,10 +1,3 @@
-//
-//  ObraCollectionViewCell.swift
-//  galeria_artistas_cwb
-//
-//  Created by user293959 on 5/6/26.
-//
-
 import UIKit
 
 class ObraCollectionViewCell: UICollectionViewCell {

@@ -1,15 +1,6 @@
-//
-//  ObrasMock.swift
-//  galeria_artistas_cwb
-//
-//  Created by user293959 on 5/6/26.
-//
-
 import Foundation
 
 // MARK: - Mock de obras de artistas curitibanos
-// Os dados aqui são uma referência didática. Verifiquem e complementem
-// com pesquisa adicional para o trabalho final.
 enum ObrasMock {
     static let todas: [ObraDeArte] = [
         ObraDeArte(
